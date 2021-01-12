@@ -15,11 +15,9 @@ function model(sequelize) {
 
     const options = {
         defaultScope: {
-            // exclude hash by default
             attributes: { exclude: ['hash'] }
         },
         scopes: {
-            // include hash with this scope
             withHash: { attributes: {}, }
         }
     };
